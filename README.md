@@ -53,3 +53,9 @@ This project was built as a **learning-driven portfolio project** to strengthen 
 - Backend integration (Node.js / MongoDB)  
 - User authentication  
 - Streaming via APIs  
+
+---
+
+## 📸 Project Preview
+
+![WaveBOX UI](screenshots/WaveBoxUi)
