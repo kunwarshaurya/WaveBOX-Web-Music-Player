@@ -4,57 +4,57 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: 'Top 50 - Global',
             artist: 'Your Daily Update',
-            cover: './projectSpotify/assets/card1img.jpeg',
+            cover: './projectWaveBox/assets/card1img.jpeg',
             file: 'https://cdn.pixabay.com/audio/2022/11/23/audio_725552a2b6.mp3'
         },
         {
             title: 'Mahiye Jinna Sohna',
             artist: 'Darshan Raval',
-            cover: './projectSpotify/assets/card2img.jpeg',
-            file: './projectSpotify/music_assets/song1.mp3'
+            cover: './projectWaveBox/assets/card2img.jpeg',
+            file: './projectWaveBox/music_assets/song1.mp3'
         },
         {
             title: 'Naa Ready',
             artist: 'Anirudh Ravichander, Vijay',
-            cover: './projectSpotify/assets/card4img.jpeg',
-            file: './projectSpotify/music_assets/song2.mp3'
+            cover: './projectWaveBox/assets/card4img.jpeg',
+            file: './projectWaveBox/music_assets/song2.mp3'
         },
         {
             title: 'Mere Paas Tum Ho',
             artist: 'Rahat Fateh Ali Khan',
-            cover: './projectSpotify/assets/card3img.jpeg',
-            file: './projectSpotify/music_assets/song3.mp3'
+            cover: './projectWaveBox/assets/card3img.jpeg',
+            file: './projectWaveBox/music_assets/song3.mp3'
         },
         {
             title: 'Naah(Lofi)',
             artist: 'Jass ManaK',
-            cover: './projectSpotify/assets/naahlofi.jpeg',
-            file: './projectSpotify/music_assets/song4.mp3'
+            cover: './projectWaveBox/assets/naahlofi.jpeg',
+            file: './projectWaveBox/music_assets/song4.mp3'
         },
         {
             title: 'Barbaadiyan',
             artist: 'Sachin-Jigar',
-            cover: './projectSpotify/assets/barbadiyan.jpg',
-            file: './projectSpotify/music_assets/song5.mp3'
+            cover: './projectWaveBox/assets/barbadiyan.jpg',
+            file: './projectWaveBox/music_assets/song5.mp3'
         }
         ,
         {
             title: 'Ek Mai Aur Ek Tu',
             artist: 'Maruti Rao, RD Burman, Asha Bhosle, Kishore Kumar, Gulshan Bawra',
-            cover: './projectSpotify/assets/emaet.jpg',
-            file: './projectSpotify/music_assets/song6.mp3'
+            cover: './projectWaveBox/assets/emaet.jpg',
+            file: './projectWaveBox/music_assets/song6.mp3'
         },
         {
             title: 'Tune Maari Entriyaan',
             artist: 'KK, Vishal Dadlani, Sohail Sen, Irshad Kamil',
-            cover: './projectSpotify/assets/tme.jpg',
-            file: './projectSpotify/music_assets/song7.mp3'
+            cover: './projectWaveBox/assets/tme.jpg',
+            file: './projectWaveBox/music_assets/song7.mp3'
         },
         {
             title: 'Dola Re Dola',
             artist: 'Kavita Krishnamurthy, Shreya Ghoshal, KK',
-            cover: './projectSpotify/assets/dedas.jpg',
-            file: './projectSpotify/music_assets/song8.mp3'
+            cover: './projectWaveBox/assets/dedas.jpg',
+            file: './projectWaveBox/music_assets/song8.mp3'
         }
     ];
     
@@ -129,14 +129,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function playSong() {
         isPlaying = true;
         audio.play();
-        playPauseBtn.src = './projectSpotify/assets/pause.png'; // Pause Icon (malfunctioning currently)
+        playPauseBtn.src = './projectWaveBox/assets/pause.png'; // Pause Icon (malfunctioning currently)
         playPauseBtn.style.height = '1.5rem';
     }
     
     function pauseSong() {
         isPlaying = false;
         audio.pause();
-        playPauseBtn.src = './projectSpotify/assets/player_icon3.png';
+        playPauseBtn.src = './projectWaveBox/assets/player_icon3.png';
         playPauseBtn.style.height = '2rem';
     }
     
