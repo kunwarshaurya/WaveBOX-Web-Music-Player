@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./projectSpotify/assets/WaveBoxLogo.png">
+    <title>WaveBox - Web Player: Music For Everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="audio-source"></audio>
+
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="background-color: #121212;">
+                   <i class="fa-solid fa-house"></i>
+                   <a href="#">Home</a> 
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a> 
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./projectSpotify/assets/library_icon.png" alt="lib">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-- Playlist -->
+                <div class="playlist-container" id="playlist-container"></div>
+            </div>
+        </div>
+    
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-navigation">
+                    <img src="./projectSpotify/assets/backward_icon.png" alt="bckwrd">
+                    <img src="./projectSpotify/assets/forward_icon.png" class="hide" alt="forwrd">
+                </div>
+                <div class="sticky-icons">
+                    <button class="badge nav-itm hide">Explore Premium</button>
+                    <button class="badge nav-itm dark-badge"><i class="fa-regular fa-circle-down"></i>Install App</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+        
+            <h2>Featured Tracks</h2>
+            <br>
+            <!-- Added data-index to each card to link them to the songs array -->
+            <div class="card-container">
+                <div class="card" data-index="0">
+                    <img src="./projectSpotify/assets/card1img.jpeg" class="card-img"> 
+                    <p class="card-title">Top 50 - Global</p> 
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+                <div class="card" data-index="1">
+                    <img src="./projectSpotify/assets/card2img.jpeg" class="card-img"> 
+                    <p class="card-title">Mahiye Jinna Sohna</p> 
+                    <p class="card-info">Darshan Raval</p>
+                </div>
+                <div class="card" data-index="2">
+                    <img src="./projectSpotify/assets/card4img.jpeg" class="card-img"> 
+                    <p class="card-title">Naa Ready</p> 
+                    <p class="card-info">Anirudh Ravichander, Vijay</p>
+                </div>
+                 <div class="card" data-index="3">
+                    <img src="./projectSpotify/assets/card3img.jpeg" class="card-img"> 
+                    <p class="card-title">Mere Paas Tum Ho</p> 
+                    <p class="card-info">Rahat Fateh Ali Khan</p>
+                </div>
+                <div class="card" data-index="4">
+                    <img src="./projectSpotify/assets/naahlofi.jpeg" class="card-img"> 
+                    <p class="card-title">Naah(Lofi)</p> 
+                    <p class="card-info">Jass Manak</p>
+                </div>
+                <div class="card" data-index="5">
+                    <img src="./projectSpotify/assets/barbadiyan.jpg" class="card-img"> 
+                    <p class="card-title">Barbaadiyan</p> 
+                    <p class="card-info">Sachin-Jigar</p>
+                </div>
+                <div class="card" data-index="6">
+                    <img src="./projectSpotify/assets/emaet.jpg" class="card-img"> 
+                    <p class="card-title">Ek Mai Aur Ek Tu</p> 
+                    <p class="card-info">Maruti Rao, RD Burman, Asha Bhosle, Kishore Kumar, Gulshan Bawra</p>
+                </div>
+                <div class="card" data-index="7">
+                    <img src="./projectSpotify/assets/tme.jpg" class="card-img"> 
+                    <p class="card-title">Tune Maari Entriyaan</p> 
+                    <p class="card-info">KK, Vishal Dadlani, Sohail Sen, Irshad Kamil</p>
+                </div>
+                <div class="card" data-index="8">
+                    <img src="./projectSpotify/assets/dedas.jpg" class="card-img"> 
+                    <p class="card-title">Dola Re Dola</p> 
+                    <p class="card-info">Kavita Krishnamurthy, Shreya Ghoshal, KK</p>
+                </div>
+            </div>
+            <h2>Featured Charts</h2>
+            <br>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./projectSpotify/assets/card5img.jpeg" class="card-img"> 
+                    <p class="card-title">Top Songs - Global</p> 
+                    <p class="card-info">Your weekly update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <img src="./projectSpotify/assets/card6img.jpeg" class="card-img"> 
+                    <p class="card-title">Top Songs - India </p> 
+                    <p class="card-info">Your weekly update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <img src="./projectSpotify/assets/card1img.jpeg" class="card-img"> 
+                    <p class="card-title">Top 50 - Global</p> 
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <div class="album">
+                <img src="" class="album-cover-img" alt="Album Cover">
+                <div class="song-info">
+                    <p class="song-title">Song Title</p>
+                    <p class="song-artist">Artist Name</p>
+                </div>
+                <div class="album-icons">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="player">
+                <div class="player-conntrols">
+                    <!-- IDs for shuffle and repeat -->
+                    <img id="shuffle-btn" src="./projectSpotify/assets/player_icon1.png" class="player-conntrols-icon">
+                    <img id="prev-btn" src="./projectSpotify/assets/player_icon2.png" class="player-conntrols-icon">
+                    <img id="play-pause-btn" src="./projectSpotify/assets/player_icon3.png" class="player-conntrols-icon" style="opacity: 1; height: 2rem;">
+                    <img id="next-btn" src="./projectSpotify/assets/player_icon4.png" class="player-conntrols-icon">
+                    <img id="repeat-btn" src="./projectSpotify/assets/player_icon5.png" class="player-conntrols-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">0:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1" value="0">
+                    <span class="tot-time">0:00</span>
+                </div>
+            </div>
+
+            <div class="control">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-computer"></i>
+                <i id="volume-icon" class="fa-solid fa-volume-high"></i>
+                <input type="range" class="volume-bar" min="0" max="100" step="1" value="100">
+            </div>
+        </div>    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

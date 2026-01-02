@@ -1,0 +1,332 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    
+}
+body{
+    background-color: #000;
+    color: white;
+    overflow: hidden; 
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: #000;
+    width:340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: #000;
+    height: 72px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color:#121212;
+    border-radius: 1rem; 
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem; 
+    flex: 1;
+    margin-top: 0.5rem;
+    padding:0.5rem 0.75rem ;
+    overflow: auto;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-option img{
+    height:1.25rem;
+    width: 1.25rem;
+}
+.icons i{
+    margin-right: 1rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    cursor: pointer;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+.nav-itm{
+    margin-right: 1rem;
+}
+.dark-badge{
+    background-color: #000;
+    color: #fff;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #1a1a1a;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.card:hover {
+    background-color: #282828;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+    padding-top: 0.75rem;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+    padding-top: 0.5rem;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.album{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+.player{
+    width: 50%;
+}
+.control{
+    width: 25%;
+}
+.player-conntrols-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.player-conntrols-icon:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+/* New class for active shuffle/repeat buttons */
+.player-conntrols-icon.active {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px #1ed760); /* Green glow */
+}
+.player-conntrols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #4d4d4d;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.album-cover-img {
+    height: 56px;
+    width: 56px;
+    border-radius: 4px;
+    margin: 0 1rem;
+}
+.song-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.song-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}  
+.song-artist {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+.album-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+.album-icons i {
+    font-size: 1rem;
+    opacity: 0.7;
+    cursor: pointer;
+} 
+.album-icons i:hover {
+    opacity: 1;
+}
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.control i {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    cursor: pointer;
+} 
+.control i:hover {
+    opacity: 1;
+}
+.volume-bar {
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 6rem;
+} 
+.volume-bar::-webkit-slider-runnable-track {
+    background-color: #4d4d4d;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+.volume-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+/* New styles for the dynamic playlist */
+.playlist-container {
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+}
+.playlist-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.playlist-item:hover {
+    background-color: #2a2a2a;
+}
+.playlist-item.active {
+    background-color: #2a2a2a;
+    color: #1ed760; /* Highlight active song with Spotify green */
+}
+.playlist-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    border-radius: 4px;
+}
+.playlist-song-info .title {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.playlist-song-info .artist {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
