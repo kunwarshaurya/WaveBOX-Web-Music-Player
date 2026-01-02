@@ -58,4 +58,4 @@ This project was built as a **learning-driven portfolio project** to strengthen 
 
 ## 📸 Project Preview
 
-![WaveBOX UI](./projectWaveBox/screenshots/WaveBoxUi)
+![WaveBOX UI](projectWaveBox/screenshots/WaveBoxUi)
